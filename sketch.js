@@ -21,8 +21,24 @@ let jungle;
 let mountains; 
 
 var colors = [];
-var heights;
+var heights = [];
 
+var jsonFile;
+
+function preload() {
+  jsonFile = loadJSON("tiles.json");
+}
+
+function loadData() {
+  let tiles = jsonFile['tiles'];
+  for (let i = 0; i < tiles.length; i++) {
+    let tile = tiles[i];
+    
+    let tileColor = color(tile['rgb'][0], tile['rgb'][1], tile['rgb'][2]);
+    colors.push(tileColor);
+    heights.push(tile['maxHeight'])
+  }
+}
 
 function setup() {
   createCanvas(800, 800);
@@ -32,29 +48,13 @@ function setup() {
   playerSpeed = smoothness;
   playerPosX = random(10000);
   playerPosY = random(10000);
-  
 
-  /*
-  deepWater = color(0, 105, 148); colors.push(deepWater);
-  water = color(17, 128, 173); colors.push(water);
-  lowWater = color(67, 165, 204); colors.push(lowWater);
-  sand = color(180, 184, 106); colors.push(sand);
-  smallGrass = color(149, 176, 74); colors.push(smallGrass);
-  grass = color(99, 133, 28); colors.push(grass);
-  jungle = color(77, 107, 15); colors.push(jungle);
-  mountains = color(56, 82, 2); colors.push(mountains);  
+  loadData();
 
-  heights = [0.1, 0.25, 0.4, 0.45, 0.5, 0.65, 0.75, 1];
-  */
-
-  processJSON("tiles.json");
+  print(heights);
+  print(colors);
   noStroke();
 
-}
-
-function processJSON(filename) {
-  let jsonFile = loadJSON(filename);
-  print(jsonFile."tiles");
 }
 
 function draw() {

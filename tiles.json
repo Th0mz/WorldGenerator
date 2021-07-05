@@ -1,35 +1,37 @@
 {
-	"tiles": [{
-		"name": "Deep Water",
-		"rgb": [0, 105, 148],
-		"maxHeight": 0.1
-	}, {
-		"name": "Water",
-		"rgb": [17, 128, 173],
-		"maxHeight": 0.25
-	}, {
-		"name": "Low Water",
-		"rgb": [67, 165, 204],
-		"maxHeight": 0.4
-	}, {
-		"name": "Sand",
-		"rgb": [180, 184, 106],
-		"maxHeight": 0.45
-	}, {
-		"name": "Small Grass",
-		"rgb": [149, 176, 74],
-		"maxHeight": 0.5
-	}, {
-		"name": "Grass",
-		"rgb": [99, 133, 28],
-		"maxHeight": 0.65
-	}, {
-		"name": "Jungle",
-		"rgb": [77, 107, 15],
-		"maxHeight": 0.75
-	}, {
-		"name": "Mountains",
-		"rgb": [56, 82, 2],
-		"maxHeight": 1
-	}]
+	"tiles": [
+		{
+			"name": "Deep Water",
+			"rgb": [0, 105, 148],
+			"maxHeight": 0.1
+		}, {
+			"name": "Water",
+			"rgb": [17, 128, 173],
+			"maxHeight": 0.25
+		}, {
+			"name": "Low Water",
+			"rgb": [67, 165, 204],
+			"maxHeight": 0.4
+		}, {
+			"name": "Sand",
+			"rgb": [180, 184, 106],
+			"maxHeight": 0.45
+		}, {
+			"name": "Small Grass",
+			"rgb": [149, 176, 74],
+			"maxHeight": 0.5
+		}, {
+			"name": "Grass",
+			"rgb": [99, 133, 28],
+			"maxHeight": 0.65
+		}, {
+			"name": "Jungle",
+			"rgb": [77, 107, 15],
+			"maxHeight": 0.75
+		}, {
+			"name": "Mountains",
+			"rgb": [56, 82, 2],
+			"maxHeight": 1
+		}
+	]
 }
