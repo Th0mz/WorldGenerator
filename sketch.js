@@ -1,25 +1,23 @@
+/* Settings */
 let mapSize = 80;
+let island = true;
+let islandSize = 4;
+let playerSpeed = "DEFAULT";
+
+
 let tileSize;
 
-let island = true;
-
+/* Player info */
 let playerPosX;
 let playerPosY;
-let playerSpeed;
+
 let playerSpeedDirX = 0;
 let playerSpeedDirY = 0;
-let smoothness = 0.04;
 
+/* World Generation */
+let smoothness = 0.04; 
 
-let deepWater;
-let water;
-let lowWater; 
-let sand;
-let smallGrass;
-let grass;
-let jungle;
-let mountains; 
-
+/* Tiles info */
 var colors = [];
 var heights = [];
 
@@ -29,6 +27,7 @@ function preload() {
   jsonFile = loadJSON("tiles.json");
 }
 
+/* Load json data into the tiles structure */
 function loadData() {
   let tiles = jsonFile['tiles'];
   for (let i = 0; i < tiles.length; i++) {
@@ -45,14 +44,14 @@ function setup() {
   
   tileSize = width / mapSize;
 
-  playerSpeed = smoothness;
+  if (playerSpeed == "DEFAULT") {
+    playerSpeed = smoothness;
+  }
+
   playerPosX = random(10000);
   playerPosY = random(10000);
 
   loadData();
-
-  print(heights);
-  print(colors);
   noStroke();
 
 }
@@ -138,7 +137,6 @@ function keyReleased() {
 */
 function islandGradient(x, y) {
   let distance = dist(x, y, width/2, height/2);
-  let islandSize = 4;
   
   if (distance <= width/islandSize) {
     return 0;
