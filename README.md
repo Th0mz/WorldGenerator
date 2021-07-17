@@ -16,7 +16,8 @@ Each biome was three attributes that you can change:
                     ]lastBiomeMaxHeight, maxHeight]
 
 <br>
-### Some Examaples
+
+#### Some Examaples
 
 <p align="center" width="100%">
     <img width="32%" src="examples/island1.png"> 
