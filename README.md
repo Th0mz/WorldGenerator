@@ -12,7 +12,8 @@ Each biome was three attributes that you can change:
         Name : name of the biome
         RGB : color that the tile will display
         maxHeight : the height map is composed by values between [0, 1]
-                    this biome will render if the height in that location is between ]lastBiomeMaxHeight, maxHeight]
+                    this biome will render if the height in that location is between 
+                    ]lastBiomeMaxHeight, maxHeight]
 
 
 ### Some Examaples
