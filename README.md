@@ -15,7 +15,7 @@ Each biome was three attributes that you can change:
                     this biome will render if the height in that location is between 
                     ]lastBiomeMaxHeight, maxHeight]
 
-
+<br>
 ### Some Examaples
 
 <p align="center" width="100%">
