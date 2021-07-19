@@ -35,6 +35,7 @@ To run the code, you need to host a local server. A easy way to do this is using
 
 Now you can connect with your browser to `localhost:<port>`, and see the code running.
 
+On the script `sketch.js` in the top, was some global variables that you can change to customize the generation.
 
 ---
 
